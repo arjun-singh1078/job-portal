@@ -1,0 +1,140 @@
+.controls-form {
+  margin-top: 2rem;
+  /* margin-left: 1rem; */
+}
+
+.top-header {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-controls {
+  margin-bottom: 2rem;
+  /* margin-left: 1rem; */
+}
+
+.form-controls input,
+.form-controls label {
+  display: block;
+}
+
+.form-controls label {
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  font-size: 14px;
+}
+
+.form-controls input,
+.form-controls select,
+.form-controls textarea {
+  font: inherit;
+  padding: 0.3rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 100%;
+}
+
+.form-controls input:focus,
+.form-controls textarea:focus {
+  outline: none;
+  border-color: #240370;
+  background-color: #e0d4fd;
+}
+
+.controls-group {
+  display: flex;
+  column-gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.controls-group .form-controls {
+  min-width: 15rem;
+  flex: 1;
+}
+
+button {
+  font: inherit;
+  background-color: #1976d2;
+  color: white;
+  border: 1px solid #1976d2;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover,
+button:active {
+  background-color: #3a7ab9;
+  border-color: #3a7ab9;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  background-color: #ccc;
+  color: rgb(27, 25, 25);
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.form-actions {
+  text-align: right;
+}
+
+/* .form-actions button {
+    margin-left: 1rem;
+  } */
+
+.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.invalid input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.error-text {
+  color: #b40e0e;
+  margin: 0;
+  font-size: 14px;
+}
+
+.check {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.spinner {
+  animation: spinner 1.5s linear infinite;
+  font: inherit;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-controls {
+    margin-left: 0rem;
+  }
+  .top-header {
+    font-size: 16px;
+  }
+  button {
+    width: 100%;
+  }
+}
